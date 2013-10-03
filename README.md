@@ -8,7 +8,7 @@ How to run:
 
 Requires PyQt4. On Ubuntu:
 
-`apt-get install python-qt4`
+`sudo apt-get install python-qt4`
 
 Then:
 
