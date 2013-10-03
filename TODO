@@ -1,0 +1,58 @@
+BUGS:
+
+Reimplement movement for selected items
+Fix panning so scrollbars reflect size of the scene
+Print - Why aren't objects printed as vectors?
+DONE except for text - Draw grips/plants/text in screen coordinates, so always same size
+
+BASIC FUNCTIONALITY:
+
+DONE - Save/Load
+DONE - Undo/Redo + Signals/slots for model/view syncing
+DONE - Plant type selection
+	Several common plants available (carrot, tomato, zucchini, pepper, peas, melon)
+Tools
+  DONE - Place plant tool
+  DONE - Selection tool (enable DragSelect)
+  DONE - Plant row (line) tool
+	Specify spacing, default to plant type's row spacing
+Show plant info
+  dock window showing info of current selection
+  Add to DB button
+
+ADVANCED:
+
+DONE - Measure tool
+  DONE - Places a ruler with draggable grips, displays length of ruler in desired units
+DONE - Rectangular bed tool
+DONE - Background image
+  DONE - set scale
+  DONE - set opacity
+  Could use offset, option to not tile
+  Make undoable?
+Snap to grid
+X/Y-Axis Rulers
+Plant DB editor
+Activity Log
+  Show list of activities by date
+  Allow to Insert Pictures
+Visual row spacing and plant spacing requirements
+  DONE - Toggle on/off in View menu
+  Row spacing draws a semi-transparent rectangle around the plant row
+    Buggy: need to rotate to actual line, like ruler text
+  DONE - Plant spacing draws a semi-transparent radius around the plant
+Freeform row tool
+Simplified Growth simulation
+	Based on days to germination, maturity on seed packets
+		(as estimated heat units required until stage is reached)
+	Accumulation of heat units based on historical heat units
+	Date slider - plant on certain date creates keyframe
+	Moving slider will show plant growing (getting larger), fruit appearing, 
+		Different plants can have different growth models
+Grouping to enable moving entire group with one click-drag
+  Ctrl+G to group, Ctrl+U to ungroup
+  Save groups to file
+Export Garden to Webpage
+  Plan
+  Meta-info
+  Activity Log w/ pics

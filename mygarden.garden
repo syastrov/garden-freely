@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+  <garden backgroundImage="/home/ice/projects/garden/mygardenbg.png" backgroundImageScale="1.0" backgroundOpacity="0.501960784314">
+  <ruler x="350.02734521" x1="-308.608693759" x2="105.54163056" y="366.070021791" y1="1.70710678119" y2="1.32842712475"/>
+  <ruler x="80.8372657343" x1="-39.75" x2="-41.6794551984" y="134.752308679" y1="-82.916522241" y2="228.28457762"/>
+  <plantRow species="Carrot" x="316.061183182" x1="-30.9497474683" x2="138.890872965" y="160.040151264" y1="2.24264068712" y2="-3.10684811211e-12"/>
+  <plantRow species="Carrot" x="349.960678119" x1="-61.5875721064" x2="112.020815281" y="208.782791952" y1="1.76776695297" y2="-3.07842640268e-12"/>
+  <plantRow species="Pea" x="219.69513011" x1="0.0" x2="201.0" y="102.757359313" y1="0.0" y2="-32.0"/>
+  <plantRow species="Pea" x="274.69513011" x1="0.0" x2="159.0" y="117.757359313" y1="0.0" y2="-11.0"/>
+  <plant species="Tomato" x="503.094625046" y="560.792893219"/>
+  <plant species="Tomato" x="633.207323419" y="563.633513652"/>
+  <plant species="Pepper" x="492.339051402" y="459.319805154"/>
+  <plant species="Cucumber" x="401.43524548" y="319.396969619"/>
+  <plant species="Cucumber" x="399.778391231" y="340.053823869"/>
+  <plant species="Melon" x="214.260101267" y="211.500000001"/>
+  <plant species="Melon" x="175.002741955" y="182.17766953"/>
+  <plant species="Melon" x="199.032179206" y="161.692388156"/>
+  <plant species="Melon" x="222.887518265" y="161.920310217"/>
+  <plant species="Melon" x="240.502741955" y="195.67766953"/>
+  <plant species="Melon" x="214.480447378" y="184.347763109"/>
+  <plant species="Zucchini" x="132.845887705" y="302.171572875"/>
+  <plant species="Zucchini" x="116.603247018" y="280.443650814"/>
+  </garden>

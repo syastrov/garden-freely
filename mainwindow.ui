@@ -1,0 +1,320 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Garden Freely</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QHBoxLayout" >
+    <item>
+     <widget class="GardenView" name="gardenView" >
+      <property name="lineWidth" >
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy" >
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy" >
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="alignment" >
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="renderHints" >
+       <set>QPainter::Antialiasing|QPainter::HighQualityAntialiasing|QPainter::SmoothPixmapTransform|QPainter::TextAntialiasing</set>
+      </property>
+      <property name="dragMode" >
+       <enum>QGraphicsView::NoDrag</enum>
+      </property>
+      <property name="cacheMode" >
+       <set>QGraphicsView::CacheNone</set>
+      </property>
+      <property name="transformationAnchor" >
+       <enum>QGraphicsView::NoAnchor</enum>
+      </property>
+      <property name="resizeAnchor" >
+       <enum>QGraphicsView::NoAnchor</enum>
+      </property>
+      <property name="viewportUpdateMode" >
+       <enum>QGraphicsView::SmartViewportUpdate</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>497</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Edit" >
+    <property name="title" >
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="separator" />
+    <addaction name="action_Delete" />
+    <addaction name="action_Select_All" />
+    <addaction name="action_Select_None" />
+   </widget>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New" />
+    <addaction name="action_Open" />
+    <addaction name="separator" />
+    <addaction name="action_Save" />
+    <addaction name="action_Save_As" />
+    <addaction name="separator" />
+    <addaction name="action_Print" />
+    <addaction name="separator" />
+    <addaction name="action_Garden_Properties" />
+    <addaction name="separator" />
+    <addaction name="action_Quit" />
+   </widget>
+   <widget class="QMenu" name="menu_View" >
+    <property name="title" >
+     <string>&amp;View</string>
+    </property>
+    <addaction name="action_Show_Plant_Spacing" />
+    <addaction name="action_Show_Row_Spacing" />
+   </widget>
+   <addaction name="menu_File" />
+   <addaction name="menu_Edit" />
+   <addaction name="menu_View" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_New" />
+   <addaction name="action_Open" />
+   <addaction name="action_Save" />
+   <addaction name="separator" />
+  </widget>
+  <action name="action_New" >
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/new.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;New...</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Quit" >
+   <property name="text" >
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Open" >
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/open.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Open...</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save" >
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/save.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Print" >
+   <property name="text" >
+    <string>&amp;Print</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_Select_All" >
+   <property name="text" >
+    <string>Select &amp;All</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Select_None" >
+   <property name="text" >
+    <string>Select &amp;None</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="action_Delete" >
+   <property name="text" >
+    <string>&amp;Delete</string>
+   </property>
+   <property name="shortcut" >
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_Undo" >
+   <property name="text" >
+    <string>&amp;Undo</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_Redo" >
+   <property name="text" >
+    <string>&amp;Redo</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="action_Save_As" >
+   <property name="text" >
+    <string>Save &amp;As...</string>
+   </property>
+  </action>
+  <action name="action_Place_Plant" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/plants/tomato.svg</iconset>
+   </property>
+   <property name="text" >
+    <string>Place Plant</string>
+   </property>
+   <property name="shortcut" >
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="action_Rectangular_Selection" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/select-rectangular.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Rectangular Selection</string>
+   </property>
+   <property name="shortcut" >
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_Plant_Row" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/plantrow.svg</iconset>
+   </property>
+   <property name="text" >
+    <string>Plant Row</string>
+   </property>
+   <property name="shortcut" >
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_Plant_Bed" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/plantbed.svg</iconset>
+   </property>
+   <property name="text" >
+    <string>Plant Bed</string>
+   </property>
+   <property name="shortcut" >
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="action_Ruler" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="icon" >
+    <iconset resource="gardenfreely.qrc" >:/images/ruler.svg</iconset>
+   </property>
+   <property name="text" >
+    <string>Ruler</string>
+   </property>
+   <property name="shortcut" >
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="action_Garden_Properties" >
+   <property name="text" >
+    <string>&amp;Garden Properties...</string>
+   </property>
+  </action>
+  <action name="action_Show_Row_Spacing" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="checked" >
+    <bool>false</bool>
+   </property>
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>Show &amp;Row Spacing</string>
+   </property>
+  </action>
+  <action name="action_Show_Plant_Spacing" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="checked" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>Show &amp;Plant Spacing</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GardenView</class>
+   <extends>QGraphicsView</extends>
+   <header>gardenview</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="gardenfreely.qrc" />
+ </resources>
+ <connections/>
+</ui>

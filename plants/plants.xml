@@ -1,0 +1,13 @@
+<plants>
+  <!-- daysToGermination="8-12" daysToHarvest="77"
+         rowSpacing="15 in" plantSpacing="2 in" -->
+  <plant species="Carrot" icon="carrot.svg" daysToGermination="8-12" daysToHarvest="77"
+         rowSpacing="50" plantSpacing="10"
+         />
+  <plant species="Tomato" icon="tomato.svg" rowSpacing="50" plantSpacing="60" />
+  <plant species="Cucumber" icon="cucumber.svg" />
+  <plant species="Pea" icon="pea.svg" />
+  <plant species="Melon" icon="melon.svg" />
+  <plant species="Pepper" icon="pepper.svg" />
+  <plant species="Zucchini" icon="zucchini.svg" />
+</plants>
