@@ -6,6 +6,12 @@ Garden design and planning software
 How to run:
 ---------
 
+Requires PyQt4. On Ubuntu:
+
+`apt-get install python-qt4`
+
+Then:
+
 `python gardenfreely.py`
 
 Features
@@ -27,17 +33,6 @@ Features
 Screenshot
 -------
 ![Screenshot](screenshot.png)
-
-
-
-Dependencies:
----------
-
-Requires PyQt4.
-
-On Ubuntu:
-
-`apt-get install python-qt4`
 
 
 
